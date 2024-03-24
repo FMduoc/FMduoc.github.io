@@ -85,3 +85,29 @@ p{
 </div>
 
 */
+
+.hero_image{
+    background-image: url(eato.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    position: relative;
+    background-position: center;
+    height:700px;width:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_inner{
+    width: 60%;
+    height: 40%;
+    display: table;
+    border: 2px solid;
+    background-color: rgba(20, 20, 20, 0.5);
+}
+
+.hero_text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
