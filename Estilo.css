@@ -111,3 +111,41 @@ p{
     vertical-align: middle;
     text-align: center;
 }
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 10%;
+}
+
+.image_container{
+    width: 50%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.image_container2{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.image_container2 img{          
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.image_container3{
+    height: 100%;
+    display: table;
+    float: right;
+}
+
+.image_container3 img{          
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
