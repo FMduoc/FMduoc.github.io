@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FisioActivo</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light mb-4" id="barraNav">
+    <a href="index.html" id="logoFisioActivo" style="font-size: 1.5vw;">
+        <img src="img/logo.png" alt="logoBookStop" style="max-width: 2.5vw;">FisioActivo
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#INICIO" style="font-size: 1.1vw;">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#SERVICIOS" style="font-size: 1.1vw;">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#METODOS" style="font-size: 1.1vw;">Métodos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html" style="font-size: 1.1vw;">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="galeria.html" style="font-size: 1.1vw;">Galería</a>
+            </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="index.html" id="socialMediaShare">
+                        <img src="img/w_icon.png" alt="logoBookStop" style="max-width: 3vw;">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" id="socialMediaShare">
+                        <img src="img/twitter.png" alt="logoBookStop" style="max-width: 2.5vw;">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" id="socialMediaShare">
+                        <img src="img/instagram.png" alt="logoBookStop" style="max-width: 2.8vw;">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" id="socialMediaShare">
+                        <img src="img/facebook.png" alt="logoBookStop" style="max-width: 2.8vw;">
+                    </a>
+                </li>
+            </ul>
+        </form>
+        <div>
+            <a href="horario.html">
+                <button style="background-color: rgb(20, 171, 247); color: white; border: none; padding: 10px 20px; border-radius: 4px; margin: 0px 5px; font-size: 1.1vw;">Agendar hora</button>
+            </a>
+            <a href="registro.html">
+                <button style="background-color: rgb(20, 171, 247); color: white; border: none; padding: 10px 20px; border-radius: 4px; margin: 0px 5px; font-size: 1.1vw;">Registrarme</button>
+            </a>
+            <a href="login.html">
+                <button style="background-color: rgb(20, 171, 247); color: white; border: none; padding: 10px 20px; border-radius: 4px; margin: 0px 5px; font-size: 1.1vw;">Iniciar sesión</button>
+            </a>
+        </div>
+    </div>
+  </nav>
+
+
+      <main role="main" id="container">
+        <div class="row jumbotron" id="containerRegister">
+            <div class="col-lg-6">
+                <img src="img/tree.jpg" alt="" class="img-fluid">
+            </div>
+            <form action="register.html" method="post" name="datos" class="col-lg-6 newsletter"
+            onsubmit="return validacion()" id="register" style="background-color: rgb(239, 239, 239);">
+                <div class=" mb-4">
+                    <h2 class="h2 mb-2 font-weight-normal"><strong style="font-size: 2.5vw;">Registro de usuario</strong></h2>
+                    <p style="font-size: 1.3vw;">Rellene el formulario con sus datos.</p>
+                    <div class="form-label-group">
+                        <input type="text" name="nombre" id="nom" placeholder="Nombre" class="form-control" style="font-size: 1.23vw;">
+                        <label for="nom"></label>
+                    </div>
+
+                    <div class="form-label-group">
+                        <input type="text" name="apellido" id="ape" placeholder="Apellido" class="form-control" style="font-size: 1.23vw;">
+                        <label for="ape"></label>
+                    </div>
+    
+                    <div class="form-label-group">
+                        <input type="text" name="email" id="ema" placeholder="Email" class="form-control" style="font-size: 1.23vw;">
+                        <label for="ema"></label>
+                    </div>
+
+                    <div class="form-label-group">
+                        <input type="text" name="direccion" id="dir" placeholder="Dirección" class="form-control" style="font-size: 1.23vw;">
+                        <label for="dir"></label>
+                    </div>
+
+                    <div class="form-label-group">
+                        <input type="text" name="fono" id="fon" placeholder="Número teléfono" class="form-control" style="font-size: 1.23vw;">
+                        <label for="fon"></label>
+                    </div>
+
+                    <div class="form-label-group">
+                        <input type="text" name="passw" id="pas" placeholder="Contraseña" class="form-control" style="font-size: 1.23vw;">
+                        <label for="pas"></label>
+                    </div>
+    
+                    <div class="">
+                        <input id="btnNewsletter" class="btn btn-lg btn-primary btn-block" type="submit"
+                        value="Registrar" style="font-size: 1.3vw;">
+                    </div>
+                </div>
+            </form>
+          </div>
+
+          <br><br>
+
+    <footer>
+      <div class="row col-12">
+
+        <div class="col-lg-2">
+            <div class="row">
+                <img src="img/logo.png" alt="" 
+                    style="margin-right: 10px; margin-left: 15px; max-width: 3vw; max-height: 3vw;">
+            </div>
+          </div>
+      
+              <div class="col-lg-2"> 
+                <strong style="font-size: 1.1vw; color: black;">Sitio</strong>
+                <hr>
+                <div class="row">
+                  <a href="index.html#INICIO" style="font-size: 1vw; margin-right: 10px; margin-left: 15px;">Inicio</a>
+                </div>
+                <div class="row">
+                  <a href="index.html#SERVICIOS" style="font-size: 1vw; margin-right: 10px; margin-left: 15px;">Servicios</a>
+                </div>
+                <div class="row">
+                  <a href="index.html#METODOS" style="font-size: 1vw; margin-right: 10px; margin-left: 15px;">Métodos</a>
+                </div>
+                <div class="row">
+                  <a href="about.html" style="font-size: 1vw; margin-right: 10px; margin-left: 15px;">Sobre nosotros</a>
+                </div>
+                <div class="row">
+                  <a href="galeria.html" style="font-size: 1vw; margin-right: 10px; margin-left: 15px;">Galería</a>
+                </div>
+              </div>
+      
+              <div class="col-lg-4">
+              </div>
+      
+              <div class="col-lg-2">
+                <strong style="font-size: 1.1vw; color: black;">Síguenos</strong>
+                <hr>
+                <div class="row">
+                  <img src="img/w_icon.png" alt="" 
+                      style="margin-right: 10px; margin-left: 15px; max-width: 1.5vw; max-height: 1.5vw;">
+                  <img src="img/twitter.png" alt="" 
+                      style="margin-right: 10px; margin-left: 15px; max-width: 1.5vw; max-height: 1.5vw;">
+                  <img src="img/instagram.png" alt="" 
+                      style="margin-right: 10px; margin-left: 15px; max-width: 1.5vw; max-height: 1.5vw;">
+                  <img src="img/facebook.png" alt="" 
+                      style="margin-right: 10px; margin-left: 15px; max-width: 1.5vw; max-height: 1.5vw;">
+                </div>
+              </div>
+
+        <div class="col-lg-2">
+          <strong style="font-size: 1.1vw; color: black;">Contacto</strong>
+          <hr>
+          <div class="row">
+            <img src="img/mapa.png" alt=""
+                style="margin-right: 10px; margin-left: 15px; max-width: 1.5vw; max-height: 1.5vw;">
+            <p style="font-size: 1vw;">Av. ?????, Maipú</p>
+          </div>
+          <div class="row">
+            <img src="img/fono.png" alt=""
+                style="margin-right: 10px; margin-left: 15px; max-width: 1.5vw; max-height: 1.5vw;">
+            <p style="font-size: 1vw;">9999999999</p>
+          </div>
+          <div class="row">
+            <img src="img/mail.png" alt=""
+                style="margin-right: 10px; margin-left: 15px; max-width: 1.5vw; max-height: 1.5vw;">
+            <p style="font-size: 1vw;">erick@fisioactivo.cl</p>
+          </div>
+          <br><br>
+          <p style="font-size: 1vw;">&copy; FisioActivo - 2024</p>
+        </div>
+      </div>
+    </footer>
+      </main>
+</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+</html>
